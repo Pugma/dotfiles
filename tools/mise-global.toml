@@ -1,0 +1,25 @@
+[settings]
+lockfile = true
+minimum_release_age = "3d"
+
+[tools]
+buf = "latest"
+claude = "latest"
+codex = "latest"
+dotnet = "10"
+flux2 = "latest"
+go = "latest"
+golangci-lint = "latest"
+helm = "latest"
+herdr = "latest"
+java = "openjdk-26"
+kubectl = "latest"
+node = "26"
+"npm:ccusage" = "latest"
+"npm:vite-plus" = "latest"
+pinact = "latest"
+pnpm = "latest"
+task = "latest"
+tbls = "latest"
+terraform = "latest"
+yarn = "4"

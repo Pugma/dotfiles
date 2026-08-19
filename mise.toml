@@ -4,3 +4,14 @@ dotfiles.root = "~/develop/dotfiles"
 
 [dotfiles]
 "~/.config/mise/config.toml" = { source = "tools/mise-global.toml" }
+
+[tools]
+taplo = "latest"
+
+[tasks."fmt:toml"]
+description = "Format and reorder TOML files"
+run = "taplo fmt"
+
+[tasks."check:toml"]
+description = "Check TOML formatting and validity"
+run = ["taplo fmt --check", "taplo check"]

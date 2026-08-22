@@ -6,9 +6,11 @@ dotfiles.root = "~/develop/dotfiles"
 "~/.claude/CLAUDE.md" = { source = "agents/CLAUDE-global.md" }
 "~/.codex/AGENTS.md" = { source = "agents/AGENTS-global.md" }
 "~/.config/mise/config.toml" = { source = "tools/mise-global.toml" }
+"~/.config/zed/settings.json" = { source = "editors/zed-settings.jsonc" }
 "~/.gitconfig" = { source = "git/config" }
 "~/.gitconfig.gitea" = { source = "git/config.gitea" }
 "~/.gitconfig.local" = { source = "git/config.local" }
+"~/Library/Application Support/Code/User/settings.json" = { source = "editors/vscode-settings.jsonc" }
 
 [tools]
 taplo = "latest"

@@ -1,0 +1,169 @@
+{
+  // ---------- Editor & files ----------
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "editor.fontSize": 14,
+  "editor.renderWhitespace": "all",
+  "editor.unicodeHighlight.includeStrings": false,
+  "editor.unicodeHighlight.nonBasicASCII": false,
+  "files.autoSave": "afterDelay",
+  "files.insertFinalNewline": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+
+  // ---------- Workbench & system ----------
+  "window.restoreFullscreen": true,
+  "window.nativeTabs": true,
+  "workbench.startupEditor": "none",
+  "workbench.editorAssociations": {
+    "*.copilotmd": "vscode.markdown.preview.editor",
+    "*.svg": "imagePreview.previewEditor"
+  },
+  "workbench.browser.openLocalhostLinks": false,
+  "terminal.integrated.initialHint": false,
+  "notebook.output.scrolling": true,
+  "chat.mcp.gallery.enabled": true,
+  "chat.viewSessions.orientation": "stacked",
+  "extensions.autoUpdate": "off",
+
+  // ---------- Git & GitHub ----------
+  "git.confirmSync": false,
+  "git.enableCommitSigning": true,
+  "git.suggestSmartCommit": false,
+  "git.blame.editorDecoration.enabled": true,
+  "github.gitProtocol": "ssh",
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "githubPullRequests.commentExpandState": "collapseAll",
+  "githubPullRequests.fileListLayout": "tree",
+  "githubPullRequests.pullBranch": "never",
+
+  // ---------- Language modes ----------
+  "[bibtex]": {
+    // インデント幅を2にする
+    "editor.tabSize": 2
+  },
+  "[dockercompose][github-actions-workflow]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "[dockercompose]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced",
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": true
+    }
+  },
+  "[javascript][javascriptreact][typescript][typescriptreact][vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "[tex][latex]": {
+    // スニペット補完中にも補完を使えるようにする
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    // インデント幅を2にする
+    "editor.tabSize": 2
+  },
+  "js/ts.updateImportsOnFileMove.enabled": "never",
+  "json.schemaDownload.trustedDomains": {
+    "https://schemastore.azurewebsites.net/": true,
+    "https://raw.githubusercontent.com/": true,
+    "https://www.schemastore.org/": true,
+    "https://json.schemastore.org/": true,
+    "https://json-schema.org/": true,
+    "https://biomejs.dev": true
+  },
+  "yaml.disableSchemaDetection": [
+    "**/.github/workflows/*.yml",
+    "**/.github/workflows/*.yaml",
+    "**/.gitea/workflows/*.yml",
+    "**/.gitea/workflows/*.yaml",
+    "**/.forgejo/workflows/*.yml",
+    "**/.forgejo/workflows/*.yaml"
+  ],
+
+  // ---------- Extensions ----------
+  "eslint.useFlatConfig": true,
+  "hediet.vscode-drawio.appearance": "dark",
+  "hediet.vscode-drawio.resizeImages": null,
+  "hediet.vscode-drawio.theme": "kennedy",
+  "markdown.extension.toc.levels": "2..6",
+  "markdown.extension.toc.orderedList": true,
+  "markdown.preview.breaks": true,
+  "markdown-pdf.breaks": true,
+  "markdown-pdf.convertOnSave": false,
+  "markdown-pdf.footerTemplate": "<div style=\"font-family: Arial; font-size: 9px; margin: 0 auto;\"> <span class='pageNumber'></span> / <span class='totalPages'></span></div>",
+  "markdown-pdf.headerTemplate": "dammy",
+  "markdown-pdf.highlightStyle": "atelier-heath-light.css",
+  "markdown-preview-enhanced.previewTheme": "github-dark.css",
+  "markdownlint.config": {
+    "MD010": false,
+    "MD024": false,
+    "MD026": false,
+    "MD029": false,
+    "MD033": false,
+    "MD034": false,
+    "MD040": false,
+    "MD045": false
+  },
+  "svelte.enable-ts-plugin": true,
+
+  // ---------- LaTeX Workshop ----------
+  // 使用パッケージのコマンドや環境の補完を有効にする
+  "latex-workshop.intellisense.package.enabled": true,
+  // 生成ファイルを削除するときに対象とするファイル
+  // デフォルト値に "*.synctex.gz" を追加
+  "latex-workshop.latex.clean.fileTypes": [
+    "*.aux",
+    "*.bbl",
+    "*.blg",
+    "*.idx",
+    "*.ind",
+    "*.lof",
+    "*.lot",
+    "*.out",
+    "*.toc",
+    "*.acn",
+    "*.acr",
+    "*.alg",
+    "*.glg",
+    "*.glo",
+    "*.gls",
+    "*.ist",
+    "*.fls",
+    "*.log",
+    "*.fdb_latexmk",
+    "*.snm",
+    "*.nav",
+    "*.dvi",
+    "*.synctex.gz"
+  ],
+  // 生成ファイルを "out" ディレクトリに吐き出す
+  "latex-workshop.latex.outDir": "out",
+  // ビルドのレシピ
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "latexmk",
+      "tools": [
+        "latexmk"
+      ]
+    }
+  ],
+  // ビルドのレシピに使われるパーツ
+  "latex-workshop.latex.tools": [
+    {
+      "name": "latexmk",
+      "command": "latexmk",
+      "args": [
+        "-silent",
+        "-outdir=%OUTDIR%",
+        "%DOC%"
+      ]
+    }
+  ],
+  "latex-workshop.latex.autoBuild.run": "never",
+}

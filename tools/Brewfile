@@ -1,0 +1,17 @@
+# for developing
+brew "gcc"
+brew "gh"
+brew "gnu-tar"
+brew "graphviz"
+brew "hadolint"
+
+# for images
+brew "imagemagick"
+
+# for sounds
+brew "ffmpeg"
+
+# for only macOS
+if OS.mac?
+  cask "mactex-no-gui"
+end

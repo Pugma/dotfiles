@@ -6,6 +6,9 @@ dotfiles.root = "~/develop/dotfiles"
 "~/.claude/CLAUDE.md" = { source = "agents/CLAUDE-global.md" }
 "~/.codex/AGENTS.md" = { source = "agents/AGENTS-global.md" }
 "~/.config/mise/config.toml" = { source = "tools/mise-global.toml" }
+"~/.gitconfig" = { source = "git/config" }
+"~/.gitconfig.gitea" = { source = "git/config.gitea" }
+"~/.gitconfig.local" = { source = "git/config.local" }
 
 [tools]
 taplo = "latest"

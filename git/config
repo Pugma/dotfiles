@@ -1,0 +1,13 @@
+[user]
+	name = Pugma
+	email = 132571355+Pugma@users.noreply.github.com
+[core]
+	editor = zed --wait
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true
+[include]
+	path = ~/.gitconfig.local
+[includeIf "hasconfig:remote.*.url:**/git@git.trap.jp:*/**"]
+	path = ~/.gitconfig.gitea

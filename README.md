@@ -7,9 +7,10 @@ dotfiles for macOS, Ubuntu, and Windows
 ### mise
 
 First, install mise from the official web page.\
-Then, review, and apply the managed dotfiles from the repository root.
+Then, create local git config with template file, review, and apply the managed dotfiles from the repository root.
 
 ```shell
+cp git/config.local.example git/config.local
 mise bootstrap dotfiles apply --dry-run
 mise bootstrap dotfiles apply
 ```

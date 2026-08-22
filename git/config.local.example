@@ -1,0 +1,4 @@
+# Copy this file to git/config.local before applying dotfiles, then set the
+# signing key for this machine.
+[user]
+	# signingkey = ~/.ssh/id_ed25519.pub

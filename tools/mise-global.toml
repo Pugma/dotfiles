@@ -5,7 +5,6 @@ minimum_release_age = "3d"
 [tools]
 buf = "latest"
 claude = "latest"
-codex = "latest"
 dotnet = "10"
 flux2 = "latest"
 go = "latest"

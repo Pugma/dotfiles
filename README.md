@@ -8,6 +8,7 @@ dotfiles for macOS, Ubuntu, and Windows
 
 Install these tools with their native installers.
 
+- Codex CLI
 - uv
 - rustup
 

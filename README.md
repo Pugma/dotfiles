@@ -4,10 +4,17 @@ dotfiles for macOS, Ubuntu, and Windows
 
 ## Installing Tools
 
+### Native installation
+
+Install these tools with their native installers.
+
+- uv
+- rustup
+
 ### mise
 
-First, install mise from the official web page.\
-Then, create local git config with template file, review, and apply the managed dotfiles from the repository root.
+Install mise from the official website.\
+From the repository root, copy the local Git config template, review it, then apply the managed dotfiles.
 
 ```shell
 cp git/config.local.example git/config.local
@@ -17,8 +24,8 @@ mise bootstrap dotfiles apply
 
 ### Homebrew
 
-First, install Homebrew from the official web page.\
-Then, run the command below.
+Install Homebrew from the official website.\
+Then install the packages in the Brewfile.
 
 ```shell
 brew bundle install --file=tools/Brewfile

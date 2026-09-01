@@ -5,6 +5,7 @@ dotfiles.root = "~/develop/dotfiles"
 [dotfiles]
 "~/.claude/CLAUDE.md" = { source = "agents/CLAUDE-global.md" }
 "~/.codex/AGENTS.md" = { source = "agents/AGENTS-global.md" }
+"~/.config/ghostty/config.ghostty" = { source = "terminal/ghostty.ghostty" }
 "~/.config/mise/config.toml" = { source = "tools/mise-global.toml" }
 "~/.config/zed/settings.json" = { source = "editors/zed-settings.jsonc" }
 "~/.gitconfig" = { source = "git/config" }

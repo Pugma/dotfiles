@@ -3,7 +3,9 @@ dotfiles.default_mode = "symlink"
 dotfiles.root = "~/develop/dotfiles"
 
 [dotfiles]
+"~/.agents/skills" = { source = "agents/skills" }
 "~/.claude/CLAUDE.md" = { source = "agents/CLAUDE-global.md" }
+"~/.claude/skills" = { source = "agents/skills" }
 "~/.codex/AGENTS.md" = { source = "agents/AGENTS-global.md" }
 "~/.config/ghostty/config.ghostty" = { source = "terminal/ghostty.ghostty" }
 "~/.config/mise/config.toml" = { source = "tools/mise-global.toml" }

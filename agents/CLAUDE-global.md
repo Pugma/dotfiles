@@ -34,6 +34,10 @@
 - Use uv for Python package and script management.
 - Respect existing project configuration.
 
+## Agent Skills
+
+- After creating, updating, renaming, or promoting an Agent Skill, run the `skills-format-validate` skill before considering the work complete.
+
 ## Quality & Safety
 
 - Prefer test-driven development when practical.

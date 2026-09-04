@@ -1,3 +1,5 @@
+min_version = "2026.7.4"
+
 [settings]
 dotfiles.default_mode = "symlink"
 dotfiles.root = "~/develop/dotfiles"
@@ -9,11 +11,9 @@ dotfiles.root = "~/develop/dotfiles"
 "~/.codex/AGENTS.md" = { source = "agents/AGENTS-global.md" }
 "~/.config/ghostty/config.ghostty" = { source = "terminal/ghostty.ghostty" }
 "~/.config/mise/config.toml" = { source = "tools/mise-global.toml" }
-"~/.config/zed/settings.json" = { source = "editors/zed-settings.jsonc" }
 "~/.gitconfig" = { source = "git/config" }
 "~/.gitconfig.gitea" = { source = "git/config.gitea" }
 "~/.gitconfig.local" = { source = "git/config.local" }
-"~/Library/Application Support/Code/User/settings.json" = { source = "editors/vscode-settings.jsonc" }
 
 [tools]
 taplo = "latest"
@@ -25,3 +25,11 @@ run = "taplo fmt"
 [tasks."check:toml"]
 description = "Check TOML formatting and validity"
 run = ["taplo fmt --check", "taplo check"]
+
+[tasks."check:dotfiles"]
+description = "Check OS-specific dotfile mappings"
+run = "uv run --script scripts/check_os_dotfiles.py"
+
+[tasks.check]
+depends = ["check:toml", "check:dotfiles"]
+description = "Run all checks"

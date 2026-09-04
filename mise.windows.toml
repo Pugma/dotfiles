@@ -1,0 +1,4 @@
+# mise only expands ~/ in dotfile targets, so use the default Windows profile layout.
+[dotfiles]
+"~/AppData/Roaming/Code/User/settings.json" = { source = "editors/vscode-settings.jsonc" }
+"~/AppData/Roaming/Zed/settings.json" = { source = "editors/zed-settings.jsonc" }

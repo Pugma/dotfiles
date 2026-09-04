@@ -39,7 +39,7 @@ Do not manage the same tool or configuration in multiple places.
 ## Workflow
 
 - When dotfile mappings change, review `mise bootstrap dotfiles apply --dry-run`.
-- Before committing, run `mise run fmt:toml` and then `mise run check:toml`.
+- Before committing, run `mise run fmt:toml` and then `mise run check`.
 - Review the resulting `git diff` and run `git diff --check`.
 - Never commit credentials, tokens, private keys, or login state.
 - Preserve unrelated working-tree changes and explain destructive or external changes before executing them.

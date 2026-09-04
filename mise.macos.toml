@@ -1,0 +1,9 @@
+[dotfiles]
+"~/Library/Application Support/Code/User/settings.json" = { source = "editors/vscode-settings.jsonc" }
+
+[tasks."check:brewfile"]
+description = "Check Brewfile formula and cask availability"
+run = "bash -o pipefail -c 'brew bundle list --file=tools/Brewfile --all | xargs -n 1 brew info >/dev/null'"
+
+[tasks.check]
+depends = ["check:toml", "check:dotfiles", "check:brewfile"]

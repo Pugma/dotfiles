@@ -31,3 +31,24 @@ Then install the packages in the Brewfile.
 ```shell
 brew bundle install --file=tools/Brewfile
 ```
+
+### Windows
+
+Use PowerShell & winget to install Git & mise.
+
+```powershell
+winget install --id Git.Git -e --source winget
+winget install --id jdx.mise -e
+```
+
+refs:\
+https://git-scm.com/install/windows\
+https://mise.jdx.dev/installing-mise.html
+
+Restart PowerShell after installation.\
+Update tools installed this way with winget; do not use `mise self-update` for a winget-managed mise installation.
+
+```powershell
+winget upgrade --id Git.Git -e
+winget upgrade --id jdx.mise -e
+```

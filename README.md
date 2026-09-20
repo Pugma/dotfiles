@@ -14,7 +14,7 @@ Install these tools with their native installers.
 
 ### mise
 
-Install mise from the official website.\
+Install mise 2026.7.4 or later from the official website.\
 From the repository root, copy the local Git config template, review it, then apply the managed dotfiles.
 
 ```shell

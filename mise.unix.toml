@@ -1,0 +1,9 @@
+[dotfiles]
+"~/.config/zed/settings.json" = { source = "editors/zed-settings.jsonc" }
+
+[tasks.check]
+depends = ["check:toml", "check:brewfile"]
+
+[tasks."check:brewfile"]
+description = "Check Brewfile formula and cask availability"
+run = "bash -o pipefail -c 'brew bundle list --file=tools/Brewfile --all | xargs -n 1 brew info >/dev/null'"

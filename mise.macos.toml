@@ -1,0 +1,2 @@
+[dotfiles]
+"~/Library/Application Support/Code/User/settings.json" = { source = "editors/vscode-settings.jsonc" }

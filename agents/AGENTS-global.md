@@ -27,6 +27,14 @@
 - Check `git status`/`git diff` before exploring to decide which files to read.
 - Make only requested or clearly necessary changes; follow existing patterns and preserve existing behavior.
 
+## Code, Tests & Commits
+
+- Code — How: make the implementation clear through naming and structure.
+- Tests — What: express expected behavior and boundary conditions.
+- Commits — What + Why: state what changed in the subject and explain why in the body when needed.
+- Comments — Why not: when an apparently better approach is easy to spot, explain why it is unnecessary or unsuitable here.
+- Avoid comments that merely repeat what the code does.
+
 ## Quality & Safety
 
 - Prefer TDD when practical; add or update tests for behavior changes.
